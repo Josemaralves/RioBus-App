@@ -1,9 +1,9 @@
-import MapView from 'react-native-maps';
+import MapView, {Polyline} from 'react-native-maps';
 import React, { useState } from 'react';
 import { FindBusByLine } from '../../controllers/BusController';
 import MarkerView from '../../components/map/BusMarker'
 
-export default function(props) {
+export default function() {
   const initPosition = {
     latitude: 37.78825,
     longitude: -122.4324,
@@ -35,7 +35,7 @@ export default function(props) {
     })
   }
 
-  setInterval(animate, 10000)
+  setInterval(animate, 9999999999)
 
   return (
     <MapView
@@ -45,6 +45,15 @@ export default function(props) {
       {locations.map(
         location => <MarkerView key={location.id} location={location} />
       )}
+
+      <Polyline
+		coordinates={[
+			{ latitude: -22.9169555190183, longitude: -43.1882839653747 },
+			{ latitude: -22.9157460018822, longitude: -43.1882513958419 },
+		]}
+		strokeColor="#000" // fallback for when `strokeColors` is not supported by the map-provider}
+		strokeWidth={5}
+	/>
 
     </MapView>
   )

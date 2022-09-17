@@ -6,7 +6,7 @@ const headers = {
 }
 
 export function FindBusByLine(line){
-    return fetch('https://jeap.rio.rj.gov.br/dadosAbertosAPI/v2/transporte/veiculos/onibus2',{
+    return fetch('https://riobus-service.herokuapp.com/track/474',{
         method: 'GET',
         headers: headers    
     }).then(response => response.json())

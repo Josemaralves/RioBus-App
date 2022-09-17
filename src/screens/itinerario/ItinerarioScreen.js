@@ -1,77 +1,55 @@
+import React, { useEffect, useState, Text } from 'react';
 import {  View, FlatList } from 'react-native';
 import LinhasCard from '../../components/itinerary/LinhasCard';
+import { FindRoutes } from '../../controllers/RoutesController';
 import styles from './styles';
+import { useNavigation } from '@react-navigation/native';
 
 export default function() {
 
   const itinerarios = [
     {
-      linha: "L012",
-      nome: "Caxias - Barra"
+      shortname: "L012",
+      longname: "Caxias - Barra",
+      agencyname: "Internorte"
     },
     {
-      linha: "L0123",
-      nome: "25 de Agosto"
+      shortname: "L012",
+      longname: "Caxias - Barra",
+      agencyname: "Internorte"
     },
     {
-      linha: "L0124",
-      nome: "Caxias - Centro"
+      shortname: "L012",
+      longname: "Caxias - Barra",
+      agencyname: "Internorte"
     },
     {
-      linha: "L012",
-      nome: "Caxias - Barra"
+      shortname: "L012",
+      longname: "Caxias - Barra",
+      agencyname: "Internorte"
     },
     {
-      linha: "L0123",
-      nome: "25 de Agosto"
-    },
-    {
-      linha: "L0124",
-      nome: "Caxias - Centro"
-    },
-    {
-      linha: "L012",
-      nome: "Caxias - Barra"
-    },
-    {
-      linha: "L0123",
-      nome: "25 de Agosto"
-    },
-    {
-      linha: "L0124",
-      nome: "Caxias - Centro"
-    },
-    {
-      linha: "L012",
-      nome: "Caxias - Barra"
-    },
-    {
-      linha: "L0123",
-      nome: "25 de Agosto"
-    },
-    {
-      linha: "L0124",
-      nome: "Caxias - Centro"
-    },
-    {
-      linha: "L012",
-      nome: "Caxias - Barra"
-    },
-    {
-      linha: "L0123",
-      nome: "25 de Agosto"
-    },
-    {
-      linha: "L0124",
-      nome: "Caxias - Centro"
+      shortname: "L012",
+      longname: "Caxias - Barra",
+      agencyname: "Internorte"
     },
   ]
+
+  const [routes, setRoutes] = useState([]) 
+
+  useEffect(() => {
+    FindRoutes().then((routesApi) => {
+      console.log(routes)
+      setRoutes(routesApi)
+    })
+  }, [])
 
 return (
   <View style={styles.container}>
     <FlatList
+      key={item => item.id}
       data={itinerarios}
-      renderItem={LinhasCard}
+      renderItem={({item}) => <LinhasCard item={item}/>}
     />
   </View>
 )

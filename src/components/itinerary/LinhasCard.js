@@ -1,17 +1,21 @@
-import { View, Text } from "react-native";
+import { View, Text, TouchableOpacity } from "react-native";
 import styles from "./styles";
+import React from 'react';
+import { useNavigation } from '@react-navigation/native';
 
-export default function(props) {
+export default function LinesCard(props) {
+  const navigation = useNavigation();
+  
     return (
-        <View style={styles.itinerarioCard}>
+        <TouchableOpacity onPress={() => navigation.navigate('LineScreen')} style={styles.itinerarioCard}>
           <View style={styles.linhaSquare}>
-              <Text style={styles.linhaText}>{props.item.linha}</Text>
+              <Text style={styles.linhaText}>{props.item.shortname}</Text>
           </View>
           <View style={styles.nomeSquare}>
-            <Text style={styles.nomeText}>{props.item.nome}</Text>
-            <Text style={styles.empresaText}>Santo Antonio</Text>
+            <Text style={styles.nomeText}>{props.item.longname}</Text>
+            <Text style={styles.empresaText}>{props.item.agencyname}</Text>
           </View>
-        </View>
+        </TouchableOpacity>
       );
 }
 
