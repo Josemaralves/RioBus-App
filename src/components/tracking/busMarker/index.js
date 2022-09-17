@@ -2,7 +2,7 @@ import { MarkerAnimated } from 'react-native-maps';
 import { View } from 'react-native';
 import IconAwesome from 'react-native-vector-icons/FontAwesome5';
 
-export default function(props){
+const marker = (props) => {
     return (
         <MarkerAnimated key={props.location.id} coordinate={props.location.track} >
             <View>
@@ -11,3 +11,5 @@ export default function(props){
       </MarkerAnimated>
     )
 }
+
+export default marker

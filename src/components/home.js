@@ -68,7 +68,7 @@
 //       }}
 //       style={{ flex: 1 }}
 //     >
-//       {locations.map(location => {
+//       {locations.tracking(location => {
 //         return( <MarkerAnimated key={location.id} coordinate={location.track} >
 //           <View>
 //             <IconAwesome name="bus" size={30} color="#999" />

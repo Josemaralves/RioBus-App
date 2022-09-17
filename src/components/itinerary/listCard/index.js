@@ -3,7 +3,7 @@ import styles from "./styles";
 import React from 'react';
 import { useNavigation } from '@react-navigation/native';
 
-export default function LinesCard(props) {
+const LinesCard = (props) => {
   const navigation = useNavigation();
   
     return (
@@ -18,4 +18,6 @@ export default function LinesCard(props) {
         </TouchableOpacity>
       );
 }
+
+export default LinesCard
 
