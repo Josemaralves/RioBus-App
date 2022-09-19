@@ -1,6 +1,6 @@
 import {createNativeStackNavigator} from "@react-navigation/native-stack";
-import ItinerarioScreen from "../../screens/itinerary/home/ItineraryScreen";
-import LineScreen from "../../screens/line/home/LineScreen";
+import LinesHomeScreen from "../../screens/lines/home/LinesHomeScreen";
+import LineDetailsScreen from "../../screens/lines/details/LineDetailsScreen";
 
 const Stack = createNativeStackNavigator();
 const LinesNavigator = () => {
@@ -8,11 +8,11 @@ const LinesNavigator = () => {
         <Stack.Navigator>
             <Stack.Screen
                 name="Linhas"
-                component={ItinerarioScreen}
+                component={LinesHomeScreen}
             />
             <Stack.Screen
                 name="LineScreen"
-                component={LineScreen}
+                component={LineDetailsScreen}
             />
         </Stack.Navigator>
     )

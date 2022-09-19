@@ -19,11 +19,14 @@ const App = () => {
           component={MapaScreen} />
         <Tab.Screen name="Paradas"
             options={{
+                headerShown: false,
                 tabBarIcon: () => { return <IconAwesome name="bus" size={18} color="#999" /> }
             }}
             component={LinesNavigator} />
-        <Tab.Screen name="LinhasB" options={{
-              tabBarIcon: () => { return <IconAwesome name="bus" size={18} color="#999" /> }
+        <Tab.Screen name="LinhasB"
+                    options={{
+                        headerShown: false,
+                        tabBarIcon: () => { return <IconAwesome name="bus" size={18} color="#999" /> }
           }}
                     component={LinesNavigator} />
       </Tab.Navigator>

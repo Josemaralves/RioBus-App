@@ -1,7 +1,7 @@
 import MapView from 'react-native-maps';
-import React, { useState } from 'react';
+import React, {useState} from 'react';
 import { FindBusByLine } from '../../../controllers/BusController';
-import MarkerView from '../../../components/tracking/busMarker'
+import BusMarker from '../../../components/tracking/busMarker'
 import {Text, TouchableHighlight} from "react-native";
 
 const initPosition = {
@@ -15,8 +15,7 @@ const TrackingScreen = () => {
   const [locations, setLocations] = useState([])
 
   const animate = () => {
-    FindBusByLine("").then(newLocations => {
-
+    FindBusByLine("474").then(newLocations => {
       setLocations(locations => locations.filter(oldLo => newLocations.find(newLo => newLo.id === oldLo.id)))
       newLocations.forEach(newLocation => {
         const oldLocation = locations.find((lo) => lo.id === newLocation.id)
@@ -46,7 +45,7 @@ const TrackingScreen = () => {
       <TouchableHighlight onPress={() => animate()}><Text>aa</Text></TouchableHighlight>
 
       {locations.map(
-        location => <MarkerView key={location.id} location={location} />
+        location => <BusMarker key={location.id} location={location} />
       )}
 
     </MapView>

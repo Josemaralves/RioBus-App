@@ -1,15 +1,18 @@
 import { AnimatedRegion } from 'react-native-maps';
 
-const headers = {
-    'Accept': 'application/json',
-    'Content-Type': 'application/json'
+const requestConfig = {
+    method: 'GET',
+    headers: {
+        'Accept': 'application/json',
+        'Content-Type': 'application/json'
+    }
 }
 
+const URL = "https://riobus-service.herokuapp.com/track?lineId="
+
 export function FindBusByLine(line){
-    return fetch('https://riobus-service.herokuapp.com/track/474',{
-        method: 'GET',
-        headers: headers    
-    }).then(response => response.json())
+    return fetch(URL + line,
+        requestConfig).then(response => response.json())
       .then(tracks => tracks.map(track => ({
             "id": track.ordem,
             "track": new AnimatedRegion({

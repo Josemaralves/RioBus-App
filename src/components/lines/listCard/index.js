@@ -7,13 +7,13 @@ const LinesCard = (props) => {
   const navigation = useNavigation();
   
     return (
-        <TouchableOpacity onPress={() => navigation.navigate('LineScreen')} style={styles.itinerarioCard}>
+        <TouchableOpacity onPress={() => navigation.navigate('LineScreen', {lineId : props.item.idRoute})} style={styles.itinerarioCard}>
           <View style={styles.linhaSquare}>
-              <Text style={styles.linhaText}>{props.item.shortname}</Text>
+              <Text style={styles.linhaText}>{props.item.shortName}</Text>
           </View>
           <View style={styles.nomeSquare}>
-            <Text style={styles.nomeText}>{props.item.longname}</Text>
-            <Text style={styles.empresaText}>{props.item.agencyname}</Text>
+            <Text style={styles.nomeText}>{props.item.longName}</Text>
+            <Text style={styles.empresaText}>{props.item.agencyName}</Text>
           </View>
         </TouchableOpacity>
       );
