@@ -2,20 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bd8f0a1d-d699-4d44-b84e-87a1de4b75ba" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/lines/listStopsCard/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/lines/listStopsCard/styles.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/controllers/LinesController.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/2-24642_imagenes-random-png-cosas-random-png-transparent-png.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/bus-solid.svg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/home.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/itinerary/listCard/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/lines/listCard/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/itinerary/listCard/styles.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/lines/listCard/styles.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/tracking/busMarker/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/tracking/busMarker/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/controllers/BusController.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/BusController.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controllers/RoutesController.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/RoutesController.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/navigators/Lines/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/navigators/Lines/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/screens/itinerary/home/ItineraryScreen.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/screens/lines/home/LinesHomeScreen.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/screens/itinerary/home/styles.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/screens/lines/home/styles.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/screens/line/home/LineScreen.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/screens/lines/details/LineDetailsScreen.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/screens/tracking/home/TrackingScreen.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/screens/tracking/home/TrackingScreen.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -34,19 +25,20 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/henri/Documents/Projetos/my-project/src/components/lines/listStopsCard&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;C:\\Users\\henri\\AppData\\Local\\JetBrains\\Toolbox\\apps\\WebStorm\\ch-0\\222.4167.31\\plugins\\JavaScriptLanguage\\jsLanguageServicesImpl\\external&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Users/henri/Documents/Projetos/my-project/assets",
+    "nodejs_package_manager_path": "npm",
+    "ts.external.directory.path": "C:\\Users\\henri\\AppData\\Local\\JetBrains\\Toolbox\\apps\\WebStorm\\ch-0\\222.4167.31\\plugins\\JavaScriptLanguage\\jsLanguageServicesImpl\\external",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\henri\Documents\Projetos\my-project\assets" />
       <recent name="C:\Users\henri\Documents\Projetos\my-project\src\components\lines\listStopsCard" />
       <recent name="C:\Users\henri\Documents\Projetos\my-project\src\screens\itinerary\home" />
     </key>
@@ -117,7 +109,7 @@
       <workItem from="1663469480658" duration="594000" />
       <workItem from="1663514685437" duration="1553000" />
       <workItem from="1663529217963" duration="5811000" />
-      <workItem from="1663597971644" duration="2338000" />
+      <workItem from="1663597971644" duration="11085000" />
     </task>
     <servers />
   </component>
@@ -145,5 +137,28 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/components/tracking/busMarker/index.js</url>
+          <line>22</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/components/tracking/busMarker/index.js</url>
+          <line>12</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/screens/tracking/home/TrackingScreen.js</url>
+          <line>41</line>
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

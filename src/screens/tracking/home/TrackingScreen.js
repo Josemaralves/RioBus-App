@@ -11,27 +11,36 @@ const initPosition = {
   longitudeDelta: 0.0421,
 }
 
+const duration = 5000
+
 const TrackingScreen = () => {
   const [locations, setLocations] = useState([])
 
   const animate = () => {
+    const toAdd = []
+    const toUpdate = []
+
     FindBusByLine("474").then(newLocations => {
       setLocations(locations => locations.filter(oldLo => newLocations.find(newLo => newLo.id === oldLo.id)))
+
       newLocations.forEach(newLocation => {
-        const oldLocation = locations.find((lo) => lo.id === newLocation.id)
+        const oldLocation = locations.find(lo => lo.id === newLocation.id)
         if(oldLocation){
           if(oldLocation.track.latitude._value !== newLocation.track.latitude._value && oldLocation.track.longitude._value !== newLocation.track.longitude._value) {
-            oldLocation.track.timing({
+            toUpdate.push(oldLocation.track.timing({
               ...newLocation.track,
               useNativeDriver: false,
-              duration: 10000
-            }).start()
+              duration
+            }))
+
           }
         }else{
-          setLocations((locations) => [...locations, newLocation])
+          toAdd.push(newLocation)
         }
       })
 
+      toUpdate.forEach(async animation => animation.start())
+      setLocations((locations) => locations.concat(toAdd))
     })
   }
 
@@ -42,10 +51,10 @@ const TrackingScreen = () => {
       initialRegion={initPosition}
       style={{ flex: 1 }}
     >
-      <TouchableHighlight onPress={() => animate()}><Text>aa</Text></TouchableHighlight>
+      <TouchableHighlight onPress={animate}><Text>aa</Text></TouchableHighlight>
 
       {locations.map(
-        location => <BusMarker key={location.id} location={location} />
+          (location) => <BusMarker key={location.id} location={location} />
       )}
 
     </MapView>

@@ -16,8 +16,8 @@ export function FindBusByLine(line){
       .then(tracks => tracks.map(track => ({
             "id": track.ordem,
             "track": new AnimatedRegion({
-              latitude: parseFloat(track.latitude),
-              longitude: parseFloat(track.longitude)
+              latitude: track.latitude,
+              longitude: track.longitude
             })
           })
         )).catch(error => { console.log(error) })
