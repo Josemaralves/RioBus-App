@@ -2,11 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bd8f0a1d-d699-4d44-b84e-87a1de4b75ba" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/assets/2-24642_imagenes-random-png-cosas-random-png-transparent-png.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/bus-solid.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/general/map/busLocation/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/general/map/mapView/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/general/map/mapView/styles.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/service/AnimateBusService.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/tracking/busMarker/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/tracking/busMarker/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controllers/BusController.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/BusController.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/screens/tracking/home/TrackingScreen.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/screens/tracking/home/TrackingScreen.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -32,6 +33,7 @@
     "WebServerToolWindowFactoryState": "false",
     "last_opened_file_path": "C:/Users/henri/Documents/Projetos/my-project/assets",
     "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
     "ts.external.directory.path": "C:\\Users\\henri\\AppData\\Local\\JetBrains\\Toolbox\\apps\\WebStorm\\ch-0\\222.4167.31\\plugins\\JavaScriptLanguage\\jsLanguageServicesImpl\\external",
     "vue.rearranger.settings.migration": "true"
   }
@@ -43,11 +45,11 @@
       <recent name="C:\Users\henri\Documents\Projetos\my-project\src\screens\itinerary\home" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\henri\Documents\Projetos\my-project\src\components\general\map" />
       <recent name="C:\Users\henri\Documents\Projetos\my-project\src\screens\line\home" />
       <recent name="C:\Users\henri\Documents\Projetos\my-project\src\screens\line\details" />
       <recent name="C:\Users\henri\Documents\Projetos\my-project\src\screens\itinerary\home" />
       <recent name="C:\Users\henri\Documents\Projetos\my-project\src\screens\mapa\home" />
-      <recent name="C:\Users\henri\Documents\Projetos\my-project\src\components\map\busMarker" />
     </key>
   </component>
   <component name="RunManager" selected="React Native.Unnamed (1)">
@@ -109,7 +111,8 @@
       <workItem from="1663469480658" duration="594000" />
       <workItem from="1663514685437" duration="1553000" />
       <workItem from="1663529217963" duration="5811000" />
-      <workItem from="1663597971644" duration="11085000" />
+      <workItem from="1663597971644" duration="13293000" />
+      <workItem from="1663635386375" duration="10190000" />
     </task>
     <servers />
   </component>
@@ -137,28 +140,5 @@
         </entry>
       </map>
     </option>
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/src/components/tracking/busMarker/index.js</url>
-          <line>22</line>
-          <properties lambdaOrdinal="-1" />
-          <option name="timeStamp" value="8" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/src/components/tracking/busMarker/index.js</url>
-          <line>12</line>
-          <properties lambdaOrdinal="-1" />
-          <option name="timeStamp" value="9" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/src/screens/tracking/home/TrackingScreen.js</url>
-          <line>41</line>
-          <option name="timeStamp" value="10" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>
