@@ -4,34 +4,6 @@ import LinhasCard from '../../../components/lines/listCard';
 import { FindRoutes } from '../../../controllers/RoutesController';
 import Styles from './styles';
 
-const itinerarios = [
-  {
-    shortname: "L012",
-    longname: "Caxias - Barra",
-    agencyname: "Internorte"
-  },
-  {
-    shortname: "L012",
-    longname: "Caxias - Barra",
-    agencyname: "Internorte"
-  },
-  {
-    shortname: "L012",
-    longname: "Caxias - Barra",
-    agencyname: "Internorte"
-  },
-  {
-    shortname: "L012",
-    longname: "Caxias - Barra",
-    agencyname: "Internorte"
-  },
-  {
-    shortname: "L012",
-    longname: "Caxias - Barra",
-    agencyname: "Internorte"
-  },
-]
-
 const LinesHomeScreen = () => {
   const [routes, setRoutes] = useState([]) 
 

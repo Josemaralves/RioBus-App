@@ -1,36 +1,21 @@
-import {Image} from "react-native";
 import {MarkerAnimated} from 'react-native-maps';
-import iconBus from '../../../../assets/favicon.png'
+import React from "react";
+import IconView from '../iconView'
 
-const DEFAULT_IMAGE = Image.resolveAssetSource(iconBus).uri;
-
-const img = {
-    uri: '../../../../assets/favicon.png',
-}
-
-const data = {
-    uri: "data:image/png;base64,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",
-    width: '1px',
-    height: '1px'
-}
-const marker = ({coordinates}) => {
+const marker = ({coordinates, id}) => {
     return (
-        <MarkerAnimated
-                        key='1'
+        <MarkerAnimated key={id}
                         coordinate={coordinates}
-                        tracksViewChanges={false}
-                        image={
-                            img
-                        }
-        />
-        //
-        // <MarkerAnimated key='1'
-        //                 coordinate={coordinates}
-        //                 tracksViewChanges={false}>
-        //         <Image source={abcd} resizeMode={"contain"}/>
-        //         {/*<IconAwesome name="bus" size={30} color="#999" />*/}
-        // </MarkerAnimated>
+                        tracksViewChanges={false}>
+                <IconView />
+        </MarkerAnimated>
     )
 }
 
-export default marker
+function markerAreEqual(prev, next) {
+    return prev.id === next.id
+}
+
+const MemoMarker = React.memo(marker, markerAreEqual)
+
+export default MemoMarker

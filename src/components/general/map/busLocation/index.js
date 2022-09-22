@@ -10,10 +10,10 @@ const BusLocation = ({lineId}) => {
         setTimeout(() => {
             if(!callingApi)
                 FindAndAnimateBusMarker(lineId, locations, setLocations, setCallingApi)
-        }, 1000)
+        }, 5000)
     }, [callingApi])
 
-    return locations.map((location) => <BusMarker key={location.id} coordinates={location.track} />)
+    return locations.map((location) => <BusMarker key={location.id} id={location.id} coordinates={location.track} />)
 }
 
 export default BusLocation

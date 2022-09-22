@@ -2,13 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bd8f0a1d-d699-4d44-b84e-87a1de4b75ba" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/general/map/busLocation/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/general/map/mapView/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/general/map/mapView/styles.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/service/AnimateBusService.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/general/map/iconStops/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/general/map/shapeLines/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/general/map/stopsLocation/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/tracking/iconView/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/store/store.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/general/map/busLocation/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/general/map/busLocation/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/general/map/mapView/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/general/map/mapView/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/tracking/busMarker/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/tracking/busMarker/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/screens/tracking/home/TrackingScreen.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/screens/tracking/home/TrackingScreen.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/screens/lines/home/LinesHomeScreen.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/screens/lines/home/LinesHomeScreen.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,18 +31,18 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/henri/Documents/Projetos/my-project/assets",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "ts.external.directory.path": "C:\\Users\\henri\\AppData\\Local\\JetBrains\\Toolbox\\apps\\WebStorm\\ch-0\\222.4167.31\\plugins\\JavaScriptLanguage\\jsLanguageServicesImpl\\external",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/henri/Documents/Projetos/my-project/assets&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;C:\\Users\\henri\\AppData\\Local\\JetBrains\\Toolbox\\apps\\WebStorm\\ch-0\\222.4167.31\\plugins\\JavaScriptLanguage\\jsLanguageServicesImpl\\external&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\henri\Documents\Projetos\my-project\assets" />
@@ -112,7 +117,10 @@
       <workItem from="1663514685437" duration="1553000" />
       <workItem from="1663529217963" duration="5811000" />
       <workItem from="1663597971644" duration="13293000" />
-      <workItem from="1663635386375" duration="10190000" />
+      <workItem from="1663635386375" duration="10284000" />
+      <workItem from="1663676142816" duration="2333000" />
+      <workItem from="1663720793394" duration="4421000" />
+      <workItem from="1663801872160" duration="1194000" />
     </task>
     <servers />
   </component>
